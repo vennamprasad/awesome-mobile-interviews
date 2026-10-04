@@ -17,18 +17,18 @@ While cloud LLMs (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro) offer unmatched rea
 
 ```mermaid
 graph TD
-    UserQuery[User Prompt] --> Tokenizer[On-Device BPE Tokenizer]
-    Tokenizer --> Engine{Inference Engine: MediaPipe / ExecuTorch}
+    UserQuery["User Prompt"] --> Tokenizer["On-Device BPE Tokenizer"]
+    Tokenizer --> Engine{"Inference Engine: MediaPipe or ExecuTorch"}
     
-    subgraph Mobile Silicon Acceleration
-        Engine -->|Apple Silicon| ANE[Apple Neural Engine / Metal GPU]
-        Engine -->|Snapdragon| NPU[Qualcomm Hexagon NPU / Adreno GPU]
-        Engine -->|MediaTek / Pixel| TPU[MediaTek APU / Google Tensor TPU]
-        Engine -->|Fallback| CPU[ARM Neon SIMD / XNNPACK]
+    subgraph "Mobile Silicon Acceleration"
+        Engine -->|"Apple Silicon"| ANE["Apple Neural Engine / Metal GPU"]
+        Engine -->|"Snapdragon"| NPU["Qualcomm Hexagon NPU / Adreno GPU"]
+        Engine -->|"MediaTek or Pixel"| TPU["MediaTek APU / Google Tensor TPU"]
+        Engine -->|"Fallback"| CPU["ARM Neon SIMD / XNNPACK"]
     end
 
-    Engine --> Decoder[Autoregressive Token Generation]
-    Decoder --> Stream[UI Stream Flow / AsyncSequence]
+    Engine --> Decoder["Autoregressive Token Generation"]
+    Decoder --> Stream["UI Stream Flow / AsyncSequence"]
 ```
 
 ---

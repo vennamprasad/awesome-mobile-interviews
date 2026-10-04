@@ -81,28 +81,28 @@ objc_msgSend(receiver, @selector(message:), arg);
 
 ```mermaid
 flowchart TD
-    Start([objc_msgSend Call]) --> CheckNil{receiver == nil?}
-    CheckNil -->|Yes| ReturnZero[Return 0 / nil Immediately]
-    CheckNil -->|No| TaggedPtr{Is Tagged Pointer?}
+    Start(["objc_msgSend Call"]) --> CheckNil{"receiver == nil?"}
+    CheckNil -->|Yes| ReturnZero["Return 0 or nil Immediately"]
+    CheckNil -->|No| TaggedPtr{"Is Tagged Pointer?"}
     
-    TaggedPtr -->|Yes| ReadTagged[Extract Method / Value directly]
-    TaggedPtr -->|No| CacheLookup{Fast-path: cache_t bucket lookup?}
+    TaggedPtr -->|Yes| ReadTagged["Extract Method or Value directly"]
+    TaggedPtr -->|No| CacheLookup{"Fast-path: cache_t bucket lookup?"}
     
-    CacheLookup -->|Hit| CallIMP[Jump directly to IMP function pointer]
-    CacheLookup -->|Miss| SlowPath[Slow-path: lookUpImpOrForward in C++]
+    CacheLookup -->|Hit| CallIMP["Jump directly to IMP function pointer"]
+    CacheLookup -->|Miss| SlowPath["Slow-path: lookUpImpOrForward in C++"]
     
-    SlowPath --> HierarchyWalk{Find IMP in Class / Superclass?}
-    HierarchyWalk -->|Found| CacheAndCall[Insert into cache_t & Call IMP]
-    HierarchyWalk -->|Not Found| DynResolve{resolveInstanceMethod:?}
+    SlowPath --> HierarchyWalk{"Find IMP in Class or Superclass?"}
+    HierarchyWalk -->|Found| CacheAndCall["Insert into cache_t & Call IMP"]
+    HierarchyWalk -->|Not Found| DynResolve{"resolveInstanceMethod:?"}
     
-    DynResolve -->|Handled| Retry[Retry Method Lookup]
-    DynResolve -->|No| FastForward{forwardingTargetForSelector:?}
+    DynResolve -->|Handled| Retry["Retry Method Lookup"]
+    DynResolve -->|No| FastForward{"forwardingTargetForSelector:?"}
     
-    FastForward -->|Returns Target| ForwardToTarget[Call objc_msgSend on new target]
-    FastForward -->|nil| FullForward{methodSignature & forwardInvocation:?}
+    FastForward -->|Returns Target| ForwardToTarget["Call objc_msgSend on new target"]
+    FastForward -->|nil| FullForward{"methodSignature & forwardInvocation:?"}
     
-    FullForward -->|Handled| Complete[Invocation Executed]
-    FullForward -->|nil / Unhandled| Crash[doesNotRecognizeSelector: CRASH]
+    FullForward -->|Handled| Complete["Invocation Executed"]
+    FullForward -->|Unhandled| Crash["doesNotRecognizeSelector: CRASH"]
 ```
 
 ### The 6 Stages of `objc_msgSend`
@@ -184,14 +184,14 @@ struct isa_t {
 
 ```mermaid
 graph LR
-    Page1[AutoreleasePoolPage 1<br/>parent: nil<br/>child: Page2] --> Page2[AutoreleasePoolPage 2<br/>parent: Page1<br/>child: nil]
+    Page1["AutoreleasePoolPage 1"] --> Page2["AutoreleasePoolPage 2"]
     
-    subgraph Page Anatomy 4096 Bytes
-        Header[Page Header: 56 bytes]
-        Sentinel[POOL_BOUNDARY: nil]
-        ObjA[Object Ref 1]
-        ObjB[Object Ref 2]
-        NextPtr[next pointer ...]
+    subgraph "Page Anatomy 4096 Bytes"
+        Header["Page Header: 56 bytes"]
+        Sentinel["POOL_BOUNDARY: nil"]
+        ObjA["Object Ref 1"]
+        ObjB["Object Ref 2"]
+        NextPtr["next pointer ..."]
     end
 ```
 

@@ -12,12 +12,12 @@ If your vision pipeline blocks the UI thread, drops frames, or triggers Garbage 
 
 ```mermaid
 graph LR
-    CameraSensor[Camera Sensor: 60fps Stream] --> FrameIngestion[CameraX ImageAnalysis / AVFoundation SampleBuffer]
-    FrameIngestion --> BufferPool[Reused Memory Buffer / Zero-Copy]
-    BufferPool --> MediaPipeTask[MediaPipe Vision Task: GPU Delegate]
-    MediaPipeTask --> OutputLandmarks[Normalized Coordinates: x, y, z]
-    OutputLandmarks --> CoordinateMapper[Aspect Ratio & Mirror Transform]
-    CoordinateMapper --> GLOverlay[Hardware-Accelerated UI Canvas Overlay]
+    CameraSensor["Camera Sensor: 60fps Stream"] --> FrameIngestion["CameraX ImageAnalysis or AVFoundation SampleBuffer"]
+    FrameIngestion --> BufferPool["Reused Memory Buffer / Zero-Copy"]
+    BufferPool --> MediaPipeTask["MediaPipe Vision Task: GPU Delegate"]
+    MediaPipeTask --> OutputLandmarks["Normalized Coordinates: x, y, z"]
+    OutputLandmarks --> CoordinateMapper["Aspect Ratio & Mirror Transform"]
+    CoordinateMapper --> GLOverlay["Hardware-Accelerated UI Canvas Overlay"]
 ```
 
 ### The Three Golden Rules of Real-Time Vision Pipelines
@@ -183,10 +183,10 @@ Displaying these landmarks over a UI camera preview requires a 3-step geometric 
 
 ```mermaid
 graph TD
-    Sensor[Raw Landmark: x, y in [0.0, 1.0]] --> Rotation[1. Sensor Rotation Transform: 90 / 270 deg]
-    Rotation --> Mirror[2. Front Camera Horizontal Mirror Flip]
-    Mirror --> Aspect[3. Aspect Fill / Fit Scale to Device Screen Bounds]
-    Aspect --> Screen[Final Screen Coordinates: X_px, Y_px]
+    Sensor["Raw Landmark: (x, y) normalized"] --> Rotation["1. Sensor Rotation Transform (90 or 270 deg)"]
+    Rotation --> Mirror["2. Front Camera Horizontal Mirror Flip"]
+    Mirror --> Aspect["3. Aspect Fill or Fit Scale to Device Screen Bounds"]
+    Aspect --> Screen["Final Screen Coordinates: (X_px, Y_px)"]
 ```
 
 ### Coordinate Mapping Formula (Aspect Fill Mode)
@@ -206,10 +206,10 @@ Beyond vision, MediaPipe provides **Audio Classification Tasks** (e.g., detectin
 
 ```mermaid
 graph LR
-    Mic[AudioRecord / AVAudioEngine] --> RingBuffer[AudioRecord Ring Buffer]
-    RingBuffer --> Waveform[MPAudioData 16kHz PCM]
-    Waveform --> AudioTask[MediaPipe AudioClassifier]
-    AudioTask --> Classification[Top Categories: e.g. 'Baby Cry' 94%]
+    Mic["AudioRecord or AVAudioEngine"] --> RingBuffer["AudioRecord Ring Buffer"]
+    RingBuffer --> Waveform["MPAudioData 16kHz PCM"]
+    Waveform --> AudioTask["MediaPipe AudioClassifier"]
+    AudioTask --> Classification["Top Categories: e.g. Baby Cry 94%"]
 ```
 
 * **Sample Rate**: Mobile audio models typically expect **16 kHz 16-bit mono PCM**.

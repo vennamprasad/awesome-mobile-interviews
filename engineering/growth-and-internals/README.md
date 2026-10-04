@@ -8,21 +8,21 @@
 
 ```mermaid
 graph TD
-    subgraph Growth & Monetization Engineering
-        G1[01. Server-Driven UI - SDUI] --> G2[02. Dynamic Feature Delivery & App Thinning]
-        G2 --> G3[03. IAP & Subscription State Machines]
+    subgraph S1["Growth & Monetization Engineering"]
+        G1["01. Server-Driven UI (SDUI)"] --> G2["02. Dynamic Feature Delivery & App Thinning"]
+        G2 --> G3["03. IAP & Subscription State Machines"]
     end
 
-    subgraph Deep Platform Internals
-        I1[04. Android Binder IPC & ART Runtime] --> I2[05. iOS Mach Kernel, XPC & ObjC Runtime]
+    subgraph S2["Deep Platform Internals"]
+        I1["04. Android Binder IPC & ART Runtime"] --> I2["05. iOS Mach Kernel, XPC & ObjC Runtime"]
     end
 
-    subgraph Edge AI & Perception Computing
-        AI1[06. On-Device Local LLMs & SLMs] --> AI2[07. Real-Time Vision & Audio with MediaPipe]
+    subgraph S3["Edge AI & Perception Computing"]
+        AI1["06. On-Device Local LLMs & SLMs"] --> AI2["07. Real-Time Vision & Audio with MediaPipe"]
     end
 
-    Growth & Monetization Engineering --> Deep Platform Internals
-    Deep Platform Internals --> Edge AI & Perception Computing
+    G3 --> I1
+    I2 --> AI1
 ```
 
 ---

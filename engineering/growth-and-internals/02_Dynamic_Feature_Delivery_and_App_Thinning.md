@@ -13,16 +13,16 @@ Mobile download size directly correlates with user acquisition and conversion ra
 
 ```mermaid
 graph TD
-    AppBinary[Master Application] --> AndroidPath[Android: App Bundles & Play Feature Delivery]
-    AppBinary --> iOSPath[iOS: App Thinning & On-Demand Resources]
+    AppBinary["Master Application"] --> AndroidPath["Android: App Bundles and Play Feature Delivery"]
+    AppBinary --> iOSPath["iOS: App Thinning and On-Demand Resources"]
 
-    AndroidPath --> A1[Install-Time Modules]
-    AndroidPath --> A2[On-Demand Dynamic Features]
-    AndroidPath --> A3[Conditional Delivery: Country, Hardware, API]
+    AndroidPath --> A1["Install-Time Modules"]
+    AndroidPath --> A2["On-Demand Dynamic Features"]
+    AndroidPath --> A3["Conditional Delivery: Country, Hardware, API"]
 
-    iOSPath --> I1[App Slicing: Architecture & Screen Density]
-    iOSPath --> I2[Asset Catalogs: Memory & Gamut Slicing]
-    iOSPath --> I3[On-Demand Resources: Tag-Based Streaming]
+    iOSPath --> I1["App Slicing: Architecture & Screen Density"]
+    iOSPath --> I2["Asset Catalogs: Memory & Gamut Slicing"]
+    iOSPath --> I3["On-Demand Resources: Tag-Based Streaming"]
 ```
 
 ---
@@ -148,19 +148,19 @@ iOS App Thinning encompasses three distinct mechanisms managed by Apple:
 sequenceDiagram
     autonumber
     actor User
-    participant App as iOS Client
-    participant ODR as Apple ODR CDN
+    participant App as "iOS Client"
+    participant ODR as "Apple ODR CDN"
     
     User->>App: Navigates to Heavy AR Feature
-    App->>App: Checks if Tag "ar_models_pack" is loaded
+    App->>App: Checks if Tag ar_models_pack is loaded
     alt Tag Not Loaded
-        App->>ODR: NSBundleResourceRequest.beginAccessingResources()
-        ODR-->>App: Streams assets (download progress callback)
+        App->>ODR: Request On-Demand Resources
+        ODR-->>App: Streams assets with progress callback
         App->>App: Assets uncompressed into Sandbox Cache
     end
     App->>User: Renders 3D Assets instantly
-    Note over App: Once finished, call endAccessingResources()
-    Note over App,ODR: OS automatically purges cached assets under storage pressure
+    Note over App: Once finished, call endAccessingResources
+    Note over App,ODR: OS purges cached assets under storage pressure
 ```
 
 ---

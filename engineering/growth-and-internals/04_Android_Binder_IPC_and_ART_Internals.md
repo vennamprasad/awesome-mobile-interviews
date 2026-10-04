@@ -12,14 +12,14 @@ Android rejected these as the primary application IPC backbone for two architect
 
 ```mermaid
 graph TD
-    subgraph Traditional Linux Socket / Pipe IPC
-        P1[Process A: User Space] -->|Copy 1: write()| K1[Linux Kernel Buffer]
-        K1 -->|Copy 2: read()| P2[Process B: User Space]
+    subgraph "Traditional Linux Socket or Pipe IPC"
+        P1["Process A: User Space"] -->|"Copy 1: write()"| K1["Linux Kernel Buffer"]
+        K1 -->|"Copy 2: read()"| P2["Process B: User Space"]
     end
 
-    subgraph Android Binder Driver Single-Copy IPC
-        BA[Process A: User Space] -->|Copy 1: copy_from_user()| BK[Binder Kernel Driver]
-        BK -->|Direct Write via mmap()| BB[Process B: Memory-Mapped User Buffer]
+    subgraph "Android Binder Driver Single-Copy IPC"
+        BA["Process A: User Space"] -->|"Copy 1: copy_from_user()"| BK["Binder Kernel Driver"]
+        BK -->|"Direct Write via mmap()"| BB["Process B: Memory-Mapped User Buffer"]
     end
 ```
 
@@ -43,20 +43,20 @@ graph TD
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Client as Client Process (App)
-    participant Bp as BpBinder (Proxy)
-    participant Driver as Binder Kernel Driver (/dev/binder)
-    participant Bn as BnBinder (Stub)
-    participant Server as Server Process (SystemServer / Remote Service)
+    participant Client as "Client Process (App)"
+    participant Bp as "BpBinder (Proxy)"
+    participant Driver as "Binder Driver (/dev/binder)"
+    participant Bn as "BnBinder (Stub)"
+    participant Server as "Server Process (SystemServer)"
 
     Client->>Bp: myService.remoteMethod(parcel)
-    Bp->>Driver: ioctl(binder_fd, BINDER_WRITE_READ, &bwr)
-    Note over Driver: Driver inspects target handle,<br/>locates receiver's mmap buffer,<br/>executes single copy from user space.
-    Driver->>Bn: Wakes up Binder thread in Server Thread Pool
+    Bp->>Driver: ioctl(BINDER_WRITE_READ)
+    Note over Driver: Driver inspects target handle,<br/>locates receiver mmap buffer,<br/>executes single copy from user space.
+    Driver->>Bn: Wakes up Binder worker thread
     Bn->>Server: onTransact(code, data, reply, flags)
-    Server-->>Bn: Executes business logic & writes return parcel
-    Bn->>Driver: ioctl(BINDER_WRITE_READ, reply)
-    Driver->>Bp: Wakes up Client thread & transfers reply parcel
+    Server-->>Bn: Executes logic and writes reply
+    Bn->>Driver: ioctl(BINDER_WRITE_READ reply)
+    Driver->>Bp: Wakes up Client thread and returns parcel
     Bp-->>Client: Returns result
 ```
 
@@ -135,15 +135,15 @@ Early Dalvik garbage collection caused noticeable frame drops (the dreaded *"Sto
 
 ```mermaid
 graph TD
-    subgraph Heap Organization
-        Eden[Eden Space: TLAB allocations]
-        Survivor[Survivor Spaces: Promoted Objects]
-        OldGen[Old Generation Space: Long-Lived Objects]
-        LargeObj[Large Object Space: Bitmaps & Large Arrays >= 12KB]
+    subgraph "Heap Organization"
+        Eden["Eden Space: TLAB allocations"]
+        Survivor["Survivor Spaces: Promoted Objects"]
+        OldGen["Old Generation Space: Long-Lived Objects"]
+        LargeObj["Large Object Space: Bitmaps & Arrays >= 12KB"]
     end
 
-    Eden -->|Survives Minor GC| Survivor
-    Survivor -->|Survives Generations| OldGen
+    Eden -->|"Survives Minor GC"| Survivor
+    Survivor -->|"Survives Generations"| OldGen
 ```
 
 ### Key Innovations of ART Generational CC GC

@@ -15,12 +15,12 @@ In traditional mobile architectures, changing a layout, introducing a promotiona
 
 ```mermaid
 graph LR
-    Server[Backend CMS / Graph API] -->|JSON Component Tree| ClientParser[Mobile SDUI Engine]
-    ClientParser --> Registry{Component Registry}
-    Registry -->|type: BANNER| BannerWidget[Native Banner Composable / View]
-    Registry -->|type: CAROUSEL| CarouselWidget[Native HorizontalPager]
-    Registry -->|type: GRID_ITEM| GridWidget[Native LazyVerticalGrid]
-    Registry -->|type: UNKNOWN| FallbackWidget[Graceful Degradation / Spacer]
+    Server["Backend CMS or Graph API"] -->|"JSON Component Tree"| ClientParser["Mobile SDUI Engine"]
+    ClientParser --> Registry{"Component Registry"}
+    Registry -->|"type: BANNER"| BannerWidget["Native Banner Composable or View"]
+    Registry -->|"type: CAROUSEL"| CarouselWidget["Native HorizontalPager"]
+    Registry -->|"type: GRID_ITEM"| GridWidget["Native LazyVerticalGrid"]
+    Registry -->|"type: UNKNOWN"| FallbackWidget["Graceful Degradation or Spacer"]
 ```
 
 ---

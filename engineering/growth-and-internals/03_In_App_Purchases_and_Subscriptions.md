@@ -17,20 +17,20 @@ Never trust the client alone to grant premium entitlements. The client initiates
 sequenceDiagram
     autonumber
     actor User
-    participant App as Mobile App
-    participant Store as Apple / Google Store
-    participant Backend as Merchant Backend
-    participant RTDN as Store Webhook (RTDN/ASSN v2)
+    participant App as "Mobile App"
+    participant Store as "Apple / Google Store"
+    participant Backend as "Merchant Backend"
+    participant RTDN as "Store Webhook (RTDN/ASSN v2)"
 
     User->>App: Initiates Subscription Purchase
-    App->>Store: Product.purchase() / BillingClient.launchBillingFlow()
+    App->>Store: Launches Billing Flow
     Store->>User: Native Biometric / Card Confirmation
-    Store-->>App: Cryptographically Signed Transaction (JWS / Token)
-    App->>Backend: POST /v1/subscriptions/verify (Send JWS / Token)
-    Backend->>Store: Verify signature against Apple Root CA / Google OAuth API
+    Store-->>App: Signed Transaction Token
+    App->>Backend: POST /v1/subscriptions/verify
+    Backend->>Store: Verify signature against Apple / Google Root API
     Backend->>Backend: Grant Entitlements in Database
-    Backend-->>App: HTTP 200 { status: "ACTIVE", tier: "PRO" }
-    App->>Store: Transaction.finish() / BillingClient.acknowledgePurchase()
+    Backend-->>App: Entitlements Granted (ACTIVE)
+    App->>Store: Finish Transaction / Acknowledge Purchase
     Note over Store,RTDN: Later: Subscription auto-renews or payment fails
     RTDN->>Backend: Webhook Notification (DID_RENEW / PAYMENT_FAILED)
     Backend->>Backend: Update User State (GRACE_PERIOD / ACCOUNT_HOLD)

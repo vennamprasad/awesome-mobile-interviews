@@ -8,6 +8,8 @@
 
 ---
 
+![Engineering Overview](../assets/overview_engineering.png)
+
 ## 📖 Engineering Pillars
 
 | Discipline | Curriculum Guide | Core Topics |

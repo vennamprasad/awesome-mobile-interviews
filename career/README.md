@@ -7,6 +7,8 @@
 
 ---
 
+![Career Overview](../assets/overview_career.png)
+
 ## 🧭 Career Modules
 
 | Module | Guide Hub | Key Topics |

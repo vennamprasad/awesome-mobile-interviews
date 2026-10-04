@@ -8,6 +8,8 @@
 
 ---
 
+![Platforms Overview](../assets/overview_platforms.png)
+
 ## 🧭 Platforms Directory
 
 | Platform | Curriculum Hub | Description |

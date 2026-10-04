@@ -135,19 +135,15 @@ Find exactly what interviewers test at your career stage:
 
 ---
 
-## 🏛️ Four Core Pillars of the Repository
+## 🏛️ Five Core Pillars of the Repository
 
-```
-awesome-mobile-interviews/
-├── platforms/          # Native Android, Native iOS, & Cross-Platform (Flutter, KMP, React Native)
-├── engineering/        # System Design, Security, Testing, Patterns, Algorithms, DevOps, Backend
-├── career/             # Resumes, Negotiation, Leadership, Management & STAR Behavioral
-└── interviews/         # Interview Frameworks, L1–Staff Suites, 200+ Company Question Banks
-```
+[![Awesome Mobile Interviews Folder Architecture](./assets/repo_architecture_overview.png)](#-five-core-pillars-of-the-repository)
 
 ---
 
 ### 📱 1. [Platform Engineering](./platforms/README.md)
+
+[![Platform Engineering Overview](./assets/overview_platforms.png)](./platforms/README.md)
 
 #### 🤖 [Android Mastery](./platforms/android/README.md)
 19-chapter sequentially structured curriculum:
@@ -175,6 +171,8 @@ awesome-mobile-interviews/
 
 ### 🛠️ 2. [Core Engineering Disciplines](./engineering/README.md)
 
+[![Core Engineering Disciplines Overview](./assets/overview_engineering.png)](./engineering/README.md)
+
 - **[System Design for Mobile](./engineering/system-design/README.md)**: 15-part end-to-end distributed system design covering scalability, caching, load balancing, API design, CDNs, and real-world architectures (Ride-Sharing, Chat, Video Streaming, Food Delivery).
 - **[Security & Reverse Engineering](./engineering/security/README.md)**: OWASP Mobile Top 10, Frida/Xposed dynamic hook defense, root detection, Keystore/Keychain, screen recording defense (`FLAG_SECURE`), and Banking-Grade hardening.
 - **[Design Patterns](./engineering/design-patterns/README.md)**: GoF Creational, Structural, Behavioral patterns + Mobile-specific Repository, UDF, and Coordinator patterns.
@@ -188,6 +186,8 @@ awesome-mobile-interviews/
 ---
 
 ### 💼 3. [Career & Engineering Leadership](./career/README.md)
+
+[![Career & Engineering Leadership Overview](./assets/overview_career.png)](./career/README.md)
 
 - **[Career Strategy](./career/career-growth/README.md)**:
   - **[Resume Guide](./career/career-growth/01_Resume_Guide.md)**: Metric-driven bullet points that pass automated ATS screens.
@@ -204,6 +204,8 @@ awesome-mobile-interviews/
 
 ### 🎤 4. [The Interview Vault (200+ Companies)](./interviews/README.md)
 
+[![The Interview Vault Overview](./assets/overview_interviews.png)](./interviews/README.md)
+
 A battle-tested vault of real-world mobile technical interviews, scoring rubrics, and company question banks:
 
 - **[Master Interview & Career Framework](./interviews/01_Interview_Master_Framework.md)**: Multi-platform technical roadmap, engineering lifecycle, and interview stages across Android, iOS, Flutter, and React Native.
@@ -217,6 +219,19 @@ A battle-tested vault of real-world mobile technical interviews, scoring rubrics
 
 ---
 
+### 🌟 5. [Curated Mobile Resources & Tooling](./resources/README.md)
+
+[![Curated Resources Overview](./assets/overview_resources.png)](./resources/README.md)
+
+Hand-picked directories of world-class open-source repositories, developer tools, podcasts, and engineering blogs:
+- **[Awesome Android Repositories](./resources/01-awesome-android-repos.md)**: Now in Android, Tivi, CatchUp, Seal, LeakCanary, Coil, Arrow-KT.
+- **[Awesome iOS Repositories](./resources/02-awesome-ios-repos.md)**: Point-Free TCA, IceCubesApp, Pulse, Kingfisher, SwiftLint.
+- **[Awesome Cross-Platform Repositories](./resources/03-awesome-cross-platform-repos.md)**: Wonderous, AppFlowy, Bluesky Social, Expensify.
+- **[System Design & Tooling Repositories](./resources/04-mobile-system-design-and-tooling-repos.md)**: MobSF, OWASP MASTG, Frida-Mobile-Scripts, Emerge Tools.
+- **[Essential Newsletters, Blogs & Podcasts](./resources/05-essential-newsletters-blogs-podcasts.md)**: Android Weekly, iOS Dev Weekly, SwiftLee, Uber/DoorDash/Meta Engineering Blogs.
+
+---
+
 ## 📈 Roadmap & Completed Modules
 We are constantly expanding **Awesome Mobile Interviews** to cover the highest levels of modern mobile engineering:
 - **[x] Observability & Mobile Vitals**: Datadog RUM, Sentry, Embrace.io (100% session capture), and Firebase Crashlytics & Perf.
@@ -225,9 +240,9 @@ We are constantly expanding **Awesome Mobile Interviews** to cover the highest l
 - **[x] UI Automation & Testing**: Maestro declarative YAML flows and cloud physical device farms (Firebase Test Lab / BrowserStack).
 - **[x] Memory & Binary Optimization**: LeakCanary Shark analysis, Xcode Instruments, and Emerge Tools (DEX/Mach-O analysis).
 - **[x] Data Sync & Offline-First**: Outbox pattern, CRDTs, Room + WorkManager sync, and SwiftData + BackgroundTasks.
-- **[ ] Advanced App Growth**: Server-Driven UI (SDUI) Frameworks and AdTech header bidding.
-- **[ ] Platform Internals**: Deep dives into Android ART runtime/Binder IPC and iOS Mach messages/Objective-C runtime.
-- **[ ] Local AI/ML**: Running SLMs (Small Language Models: Gemma 2B, LLaMA 3.2) on-device.
+- **[x] Advanced App Growth**: Server-Driven UI (SDUI) Frameworks, Dynamic Feature Delivery, and In-App Purchase Subscription State Machines.
+- **[x] Platform Internals**: Deep dives into Android ART runtime / Binder single-copy IPC and iOS Mach kernel / Objective-C runtime.
+- **[x] On-Device AI & Perception**: Running SLMs (Gemma 2B, LLaMA 3.2), 60fps MediaPipe vision/audio pipelines, and Agentic Tool-Use.
 
 Check out our [Detailed Roadmap](./ROADMAP.md) to see how you can contribute!
 

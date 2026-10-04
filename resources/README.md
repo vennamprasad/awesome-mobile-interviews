@@ -4,6 +4,8 @@
 
 ---
 
+![Resources Overview](../assets/overview_resources.png)
+
 ## 🧭 Resource Directory Navigation
 
 ```mermaid

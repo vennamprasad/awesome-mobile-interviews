@@ -27,17 +27,17 @@ This document outlines the planned content and modules across the Awesome Mobile
   - Real-time sync using WebSockets/gRPC.
   - Handling complex data migrations.
 
-## 🟠 Phase 3: Growth, Business & Modern Tech (Future)
-- **App Growth Engineering**
-  - Server-Driven UI (SDUI) Frameworks.
-  - Dynamic Feature Delivery & App Thinning.
-  - In-App Purchase (IAP) & Subscription State Machines.
-- **Platform Internals**
-  - Deep dive: Android Binder IPC & ART.
-  - Deep dive: iOS Objective-C Runtime & Mach.
-- **On-Device AI**
-  - Integrating Local LLMs.
-  - Real-time Image/Audio processing with MediaPipe.
+## 🟢 Phase 3: Growth, Business & Modern Tech (Completed)
+- [x] **App Growth Engineering**
+  - [x] [Server-Driven UI (SDUI) Frameworks](./engineering/growth-and-internals/01_Server_Driven_UI_SDUI.md)
+  - [x] [Dynamic Feature Delivery & App Thinning](./engineering/growth-and-internals/02_Dynamic_Feature_Delivery_and_App_Thinning.md)
+  - [x] [In-App Purchase (IAP) & Subscription State Machines](./engineering/growth-and-internals/03_In_App_Purchases_and_Subscriptions.md)
+- [x] **Platform Internals**
+  - [x] [Deep dive: Android Binder IPC & ART Runtime](./engineering/growth-and-internals/04_Android_Binder_IPC_and_ART_Internals.md)
+  - [x] [Deep dive: iOS Objective-C Runtime, Mach & XPC](./engineering/growth-and-internals/05_iOS_Objective_C_Runtime_and_Mach_Internals.md)
+- [x] **On-Device AI & Perception Computing**
+  - [x] [Integrating Local LLMs & SLMs](./engineering/growth-and-internals/06_Local_LLMs_On_Device.md)
+  - [x] [Real-time Image/Audio processing with MediaPipe](./engineering/growth-and-internals/07_Real_Time_Image_Audio_Processing_MediaPipe.md)
 
 ## 🤝 How to Help
 If you are an expert in any of these areas, we would love your contribution!

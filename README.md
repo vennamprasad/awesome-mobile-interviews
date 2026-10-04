@@ -178,6 +178,7 @@ awesome-mobile-interviews/
 - **[Tools, Observability & Experimentation](./engineering/tools-and-devops/README.md)**: Full-stack Observability ([Datadog RUM](./engineering/tools-and-devops/observability/01_datadog_mobile_rum.md), [Sentry ANR Tracking](./engineering/tools-and-devops/observability/02_sentry_crash_and_performance.md)), Progressive Delivery & A/B Testing ([Split.io Feature Flags & Kill Switches](./engineering/tools-and-devops/experimentation-and-flags/01_split_io_and_feature_flags.md), [Eppo Warehouse-Native A/B Testing](./engineering/tools-and-devops/experimentation-and-flags/02_eppo_and_ab_testing.md)), Advanced Git internals, CI/CD pipelines, Fastlane, Charles Proxy, and Postman API mocking.
 - **[Backend & Cloud Foundations](./engineering/backend-and-cloud/README.md)**: Cloud-native microservices, Docker/K8s, REST API design, GraphQL & Apollo caching, and Firebase serverless.
 - **[Emerging Tech](./engineering/emerging-tech/README.md)**: On-Device ML (CoreML, TFLite), VisionOS spatial computing, WCAG Accessibility (a11y), AI Engineering (RAG, on-device SLMs), and AdTech/Media playback.
+- **[Growth, Internals & Edge AI](./engineering/growth-and-internals/README.md)**: Server-Driven UI (SDUI), Dynamic Feature Delivery & App Thinning, In-App Purchase (IAP) & Subscription State Machines, Android Binder IPC & ART internals, iOS Mach & ObjC Runtime, and On-Device Local LLMs/MediaPipe.
 
 ---
 

@@ -237,10 +237,29 @@ Check out our [Detailed Roadmap](./ROADMAP.md) to see how you can contribute!
 &nbsp;
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/prasadvennam)
 
+<br/>
+
+👉 **[Read our Full Sponsorship & Partnership Prospectus (Tiers & Deliverables)](./SPONSORSHIP.md)**
+
 </div>
 
 * ☕ **Individual Supporters:** Back the project to keep all guides, diagrams, and company banks free and open-source.
 * 🏢 **Corporate Sponsors:** Feature your company engineering brand or developer tool in front of thousands of active mobile developers preparing for interviews.
+
+---
+
+## 🏆 Featured Sponsors & Partners
+
+*Your organization's logo, link, and blurb could be featured here across thousands of active mobile developers preparing for technical loops.*  
+👉 **[View Sponsorship Tiers & Invoicing Options](./SPONSORSHIP.md)**
+
+---
+
+## ⚖️ Legal & Fair Use Disclaimer
+
+* **Independent Educational Resource:** Awesome Mobile Interviews is an independent, community-driven open-source publication. All product names, logos, brands, and registered trademarks mentioned within this repository are the property of their respective owners.
+* **Non-Affiliation:** Their mention does not imply endorsement, affiliation, sponsorship, or association with any of the named companies.
+* **Ethical Community Sourcing:** Question banks, system design blueprints, and scenario prompts are community-contributed reconstructions based on standard industry design patterns and publicly shared post-interview candidate feedback, strictly adhering to non-disclosure obligations (NDA).
 
 ---
 

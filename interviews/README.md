@@ -28,3 +28,16 @@
 | :--- | :--- | :--- | :--- |
 | **Product-Based Companies** | 155+ | **[product-based Directory](./product-based/README.md)** | OpenAI, Google, Meta, Apple, Discord, Duolingo, Revolut, Uber, Spotify, Stripe, Airbnb, Flipkart, Swiggy, Zomato |
 | **Service-Based & Consulting** | 48+ | **[service-based Directory](./service-based/README.md)** | Tata Elxsi, Nagarro, UST Global, Endava, Apexon, EPAM, Thoughtworks, Accenture, Cognizant, Infosys, TCS, Wipro |
+
+---
+
+## ⚖️ Legal, Trademark & Fair Use Notice
+
+* **Educational Purpose:** The question banks and engineering topics in this directory are community-driven educational resources designed to help engineers practice standard architectural and algorithmic problem-solving.
+* **Trademark Disclaimer:** All company names, logos, and trademarks (e.g. Google, Apple, Meta, Uber, Spotify, Stripe, etc.) are the property of their respective owners. Their mention in this repository is strictly for descriptive, identification, and educational reference under nominative fair use doctrine.
+* **Non-Affiliation:** Mention of any company does not imply affiliation, sponsorship, endorsement, or approval by said company.
+* **Non-Disclosure (NDA) Compliance:** All interview questions and system design prompts are generalized community reconstructions derived from publicly shared candidate discussions, blog posts, and standard industry problem patterns. No proprietary, confidential, or private interview examination materials are contained herein.
+
+---
+
+[⬅️ Back to Main Handbook Overview](../README.md)

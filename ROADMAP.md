@@ -38,11 +38,11 @@ This document outlines the planned content and modules across the Awesome Mobile
 - [x] **On-Device AI & Perception Computing**
   - [x] [Integrating Local LLMs & SLMs](./engineering/growth-and-internals/06_Local_LLMs_On_Device.md)
   - [x] [Real-time Image/Audio processing with MediaPipe](./engineering/growth-and-internals/07_Real_Time_Image_Audio_Processing_MediaPipe.md)
+  - [x] [Agentic Mobile Systems: On-Device Tool-Use & AppIntents](./engineering/growth-and-internals/08_Agentic_Mobile_Systems_and_On_Device_Tool_Use.md)
 
 ## 🔮 Phase 4: Emerging Frontiers (In Progress & Planned)
 - [ ] **Cross-Platform Deep Dives**: Compose Multiplatform on iOS (Skiko rendering), Flutter Impeller 3D/Vulkan backend, React Native Bridgeless C++ TurboModules.
 - [ ] **Spatial & Ambient Computing**: Apple VisionOS RealityKit & Spatial UI, Android XR & WearOS Tiles.
-- [ ] **Agentic Mobile Systems**: On-device Function Calling, local SLM Tool-Use, and Multi-Modal Agent workflows.
 
 ## 🤝 How to Help
 If you are an expert in any of these areas, we would love your contribution!

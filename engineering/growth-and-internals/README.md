@@ -19,6 +19,7 @@ graph TD
 
     subgraph S3["Edge AI & Perception Computing"]
         AI1["06. On-Device Local LLMs & SLMs"] --> AI2["07. Real-Time Vision & Audio with MediaPipe"]
+        AI2 --> AI3["08. Agentic Mobile Systems & Tool-Use"]
     end
 
     G3 --> I1
@@ -52,3 +53,5 @@ graph TD
   * Running Small Language Models (Gemma 2B, LLaMA 3.2 1B/3B, Phi-3.5) on mobile, ExecuTorch, MediaPipe GenAI LLM Inference API, INT4/INT8 quantization, thermal throttling management, and memory-mapped model weights.
 * **[07. Real-Time Vision & Audio Processing with MediaPipe](./07_Real_Time_Image_Audio_Processing_MediaPipe.md)**
   * Real-time 60fps Pose Landmarker, Face Mesh, and Hand Gesture detection with CameraX / AVFoundation frame pipelines, GPU delegates, and low-latency audio classification.
+* **[08. Agentic Mobile Systems & On-Device Tool-Use](./08_Agentic_Mobile_Systems_and_On_Device_Tool_Use.md)**
+  * Autonomous ReAct loops on mobile, Grammar-Constrained JSON decoding (GBNF), Android & Apple AppIntents tool registries, Biometric authorization gates, and multi-modal camera perception agents.

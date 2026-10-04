@@ -18,14 +18,14 @@ This document outlines the planned content and modules across the Awesome Mobile
 - [x] **Binary Optimization & App Size**: Emerge Tools, DEX/Mach-O breakdown, and Reaper dead code elimination.
 - [x] **Growth & Linking**: Branch.io Deferred Deep Linking and AppsFlyer MMP attribution.
 - [x] **Release Orchestration**: Runway mobile release trains and automated health gating.
-- **Developer Experience (DevEx)**
-  - Gradle/Xcode build speed optimization.
-  - Setting up Remote Build Caching.
-  - Writing custom Static Analysis (Lint/SwiftLint) for teams.
-- **Data & Sync**
-  - Offline-first architecture patterns.
-  - Real-time sync using WebSockets/gRPC.
-  - Handling complex data migrations.
+- [x] **Developer Experience (DevEx)**
+  - [x] Gradle/Xcode build speed optimization.
+  - [x] Setting up Remote Build Caching.
+  - [x] Writing custom Static Analysis (Lint/SwiftLint) for teams.
+- [x] **Data & Sync**
+  - [x] Offline-first architecture patterns.
+  - [x] Real-time sync using WebSockets/gRPC.
+  - [x] Handling complex data migrations.
 
 ## 🟢 Phase 3: Growth, Business & Modern Tech (Completed)
 - [x] **App Growth Engineering**
@@ -39,6 +39,11 @@ This document outlines the planned content and modules across the Awesome Mobile
   - [x] [Integrating Local LLMs & SLMs](./engineering/growth-and-internals/06_Local_LLMs_On_Device.md)
   - [x] [Real-time Image/Audio processing with MediaPipe](./engineering/growth-and-internals/07_Real_Time_Image_Audio_Processing_MediaPipe.md)
 
+## 🔮 Phase 4: Emerging Frontiers (In Progress & Planned)
+- [ ] **Cross-Platform Deep Dives**: Compose Multiplatform on iOS (Skiko rendering), Flutter Impeller 3D/Vulkan backend, React Native Bridgeless C++ TurboModules.
+- [ ] **Spatial & Ambient Computing**: Apple VisionOS RealityKit & Spatial UI, Android XR & WearOS Tiles.
+- [ ] **Agentic Mobile Systems**: On-device Function Calling, local SLM Tool-Use, and Multi-Modal Agent workflows.
+
 ## 🤝 How to Help
 If you are an expert in any of these areas, we would love your contribution!
 1. Pick a topic from the roadmap.
@@ -46,4 +51,4 @@ If you are an expert in any of these areas, we would love your contribution!
 3. Submit a PR with the content.
 
 ---
-*Last Updated: $(date +%Y-%m-%d)*
+*Last Updated: 2026-10-04*

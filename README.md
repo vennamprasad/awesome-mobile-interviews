@@ -57,6 +57,7 @@ graph TD
     Start --> E[🌉 Switching from Android to iOS]
     Start --> F[🐍 Learn Python for AI, Backend & Automation]
     Start --> G[🌟 Explore Open-Source Repos & Curated Resources]
+    Start --> H[🔬 Staff Platform Internals & Edge AI]
 
     A --> Vault[👉 Jump to The Interview Vault & Company Banks]
     B --> SysDesign[👉 Jump to 15-Part Mobile System Design Hub]
@@ -65,6 +66,7 @@ graph TD
     E --> Rosetta[👉 Jump to iOS for Android Developers Rosetta Stone]
     F --> PyTrack[👉 Jump to 5-Phase Python Engineering Track]
     G --> Resources[👉 Jump to Curated Mobile Repositories & Tools Hub]
+    H --> Internals[👉 Jump to Growth, Internals & Edge AI Master Hub]
 ```
 
 1. **🚀 "I have an upcoming technical interview in less than 2 weeks"**  
@@ -81,6 +83,8 @@ graph TD
    $\rightarrow$ Follow the **[5-Phase Python Engineering Track](./engineering/python/README.md)** (GIL & memory mechanics, FastAPI backends, PyTorch to CoreML/TFLite on-device export, ADB scripting, and DSA).
 7. **🌟 "I want to explore the best open-source mobile repos, newsletters, and podcasts"**  
    $\rightarrow$ Browse the **[Curated Mobile Resources Directory](./resources/README.md)** (Now in Android, IceCubesApp, TCA showcases, Wonderous, MobSF, engineering blogs, and podcasts).
+8. **🔬 "I want to master Staff-Level Platform Internals, SDUI & On-Device AI"**  
+   $\rightarrow$ Dive into **[Growth Engineering, Platform Internals & Edge AI](./engineering/growth-and-internals/README.md)** (Server-Driven UI, Play Feature Delivery & ODR, StoreKit 2 & Play Billing 7 state machines, Android Binder & ART internals, iOS Mach & ObjC runtime, and Local LLMs / MediaPipe).
 
 ---
 
@@ -126,6 +130,7 @@ Find exactly what interviewers test at your career stage:
 - **Distributed Mobile System Design**: [15-Part Mobile System Design Hub](./engineering/system-design/README.md) (Offline sync, WebSockets, Rate limiting, Video streaming).
 - **Mobile Security & Penetration Defense**: [OWASP Mobile Top 10 & Frida Hook Defense](./engineering/security/README.md) (Keystore, Certificate Pinning, Root/Jailbreak detection).
 - **Production Observability & Telemetry**: [Datadog RUM & Sentry ANR Tracking](./engineering/tools-and-devops/observability/01_datadog_mobile_rum.md)
+- **Growth Engineering & Deep Platform Internals**: [Server-Driven UI, Dynamic Features, Binder IPC, Mach/ObjC Runtime, On-Device AI](./engineering/growth-and-internals/README.md)
 - **Career & Engineering Leadership**: [Engineering Management](./career/leadership/01_Engineering_Management.md), [Technical RFCs & ADRs](./career/leadership/02_Technical_Leadership.md), and [STAR Behavioral Frameworks](./career/leadership/04_Behavioral_Questions.md).
 
 ---

@@ -9,6 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/vennamprasad/awesome-mobile-interviews?style=social)](https://github.com/vennamprasad/awesome-mobile-interviews/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/vennamprasad/awesome-mobile-interviews?style=social)](https://github.com/vennamprasad/awesome-mobile-interviews/network/members)
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-EA4AAA?style=social&logo=github-sponsors)](https://github.com/sponsors/vennamprasad)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 **[🎯 Choose Your Goal](#-where-to-start-choose-your-immediate-goal)** • 
@@ -17,6 +18,7 @@
 **[🐍 Python Track](./engineering/python/README.md)** • 
 **[🌟 Curated Repos & Resources](./resources/README.md)** • 
 **[🏢 200+ Company Banks](./interviews/README.md)** • 
+**[💖 Sponsor](#-sponsoring--supporting-the-handbook)** • 
 **[🤝 Contribute](./CONTRIBUTING.md)**
 
 </div>
@@ -221,6 +223,21 @@ We are constantly expanding **Awesome Mobile Interviews** to cover the highest l
 - **[ ] Local AI/ML**: Running SLMs (Small Language Models: Gemma 2B, LLaMA 3.2) on-device.
 
 Check out our [Detailed Roadmap](./ROADMAP.md) to see how you can contribute!
+
+---
+
+## 💖 Sponsoring & Supporting the Handbook
+
+**Awesome Mobile Interviews** is 100% free, community-driven, and maintained independently. If this handbook helped you prepare for an interview, land a role, or design a better architecture, consider supporting its continuous maintenance:
+
+<div align="center">
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor_on_GitHub-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/vennamprasad)
+
+</div>
+
+* ☕ **Individual Supporters:** Back the project to keep all guides, diagrams, and company banks free and open-source.
+* 🏢 **Corporate Sponsors:** Feature your company engineering brand or developer tool in front of thousands of active mobile developers preparing for interviews.
 
 ---
 

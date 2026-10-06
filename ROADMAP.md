@@ -12,7 +12,7 @@ This document outlines the planned content and modules across the Awesome Mobile
 - [x] **Observability & Reliability**: Datadog RUM, Sentry, Embrace.io (100% session capture), Firebase Crashlytics & Perf.
 - [x] **Feature Management & Experimentation**: LaunchDarkly (SSE streaming), Statsig (Pulse metrics), Split.io, Eppo.
 - [x] **Build Systems & Compilation**: Bazel, Buck2, Develocity, and Tuist.
-- [x] **UI Automation & Device Testing**: Maestro declarative YAML and Cloud Device Farms (Firebase Test Lab / BrowserStack).
+- [x] **UI Automation & Device Testing**: [Mobile QA Strategy & Test Pyramid](./engineering/testing/01_mobile_qa_strategy_and_test_pyramid.md), [Jetpack Compose Testing & Roborazzi](./engineering/testing/02_jetpack_compose_ui_testing.md), [iOS XCUITest & Swift Testing](./engineering/testing/03_xcuitest_ios_automation.md), [Maestro Declarative YAML](./engineering/testing/04_maestro_declarative_automation.md), and Cloud Device Farms.
 - [x] **Memory & Heap Forensics**: LeakCanary Shark analysis and Xcode Instruments.
 - [x] **Headless Snapshot Testing**: Paparazzi, Roborazzi, and Point-Free.
 - [x] **Binary Optimization & App Size**: Emerge Tools, DEX/Mach-O breakdown, and Reaper dead code elimination.

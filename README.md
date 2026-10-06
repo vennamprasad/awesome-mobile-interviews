@@ -16,6 +16,7 @@
 **[🎯 Choose Your Goal](#-where-to-start-choose-your-immediate-goal)** • 
 **[🚦 Experience Paths](#-navigation-by-experience-level--difficulty)** • 
 **[📐 System Design](./engineering/system-design/README.md)** • 
+**[🧪 Mobile QA & SDET](./engineering/testing/README.md)** • 
 **[🐍 Python Track](./engineering/python/README.md)** • 
 **[🌟 Curated Repos & Resources](./resources/README.md)** • 
 **[🏢 200+ Company Banks](./interviews/README.md)** • 
@@ -30,6 +31,7 @@
 * **⏱️ Understand the Value in 10 Seconds:** No 1,000-page bloated PDFs or paywalls. Every topic is distilled into crisp architectural answers, real code snippets, and production war-stories.
 * **🎯 Calibrated by Experience Level:** Clear distinction between what is expected from a **Junior (0–3 yrs)**, **Mid-Level (3–6 yrs)**, and **Senior/Staff (6+ yrs)** engineer.
 * **📐 Distributed Mobile System Design:** Master real-world client-server architectures with interactive Mermaid diagrams (Offline-First Sync, Live Telemetry, Feed Pagination, Video Streaming).
+* **🧪 Comprehensive Mobile QA & SDET Engineering:** Master mobile test pyramids, interruption matrices, Compose/XCUITest automation, and Maestro declarative testing.
 * **🐍 Full Python Engineering Track:** 5-phase learning curve from language mechanics & GIL to FastAPI microservices, on-device AI model export (CoreML/TFLite), and mobile automation.
 * **🌟 Curated Production Repos & Resources:** Comprehensive directory of the best open-source Android, iOS, and Cross-Platform repositories, podcasts, and engineering blogs.
 * **🏢 200+ Verified Company Question Banks:** Real interview questions asked at FAANG, global unicorns (Uber, Spotify, Stripe, OpenAI), and 60+ Indian product powerhouses.
@@ -38,9 +40,9 @@
 
 ### ⚡ Quick Glance: The Repository in Numbers
 
-| 📱 4 Stacks | 🐍 Python Track | 🏢 200+ Companies | 📐 15+ System Designs | 🌟 Curated Hub | 💯 100% Free |
+| 📱 4 Stacks | 🧪 SDET & QA | 🐍 Python Track | 🏢 200+ Companies | 📐 15+ System Designs | 💯 100% Free |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Android • iOS • Flutter • React Native** | **FastAPI • On-Device ML • Automation** | **FAANG, Unicorns & Consultancies** | **WhatsApp, Uber, Instagram, E-Commerce** | **Top Open-Source Repos & Blogs** | **Open Source & Community Driven** |
+| **Android • iOS • Flutter • React Native** | **Compose • XCUITest • Maestro** | **FastAPI • On-Device ML • Automation** | **FAANG, Unicorns & Consultancies** | **WhatsApp, Uber, Instagram, SDUI** | **Open Source & Community Driven** |
 
 ---
 
@@ -58,6 +60,7 @@ graph TD
     Start --> F[🐍 Learn Python for AI, Backend & Automation]
     Start --> G[🌟 Explore Open-Source Repos & Curated Resources]
     Start --> H[🔬 Staff Platform Internals & Edge AI]
+    Start --> I[🧪 Master Mobile QA, SDET & Automation]
 
     A --> Vault[👉 Jump to The Interview Vault & Company Banks]
     B --> SysDesign[👉 Jump to 15-Part Mobile System Design Hub]
@@ -67,6 +70,7 @@ graph TD
     F --> PyTrack[👉 Jump to 5-Phase Python Engineering Track]
     G --> Resources[👉 Jump to Curated Mobile Repositories & Tools Hub]
     H --> Internals[👉 Jump to Growth, Internals & Edge AI Master Hub]
+    I --> QATrack[👉 Jump to Mobile QA, Testing & SDET Hub]
 ```
 
 1. **🚀 "I have an upcoming technical interview in less than 2 weeks"**  
@@ -85,6 +89,8 @@ graph TD
    $\rightarrow$ Browse the **[Curated Mobile Resources Directory](./resources/README.md)** (Now in Android, IceCubesApp, TCA showcases, Wonderous, MobSF, engineering blogs, and podcasts).
 8. **🔬 "I want to master Staff-Level Platform Internals, SDUI & On-Device AI"**  
    $\rightarrow$ Dive into **[Growth Engineering, Platform Internals & Edge AI](./engineering/growth-and-internals/README.md)** (Server-Driven UI, Play Feature Delivery & ODR, StoreKit 2 & Play Billing 7 state machines, Android Binder & ART internals, iOS Mach & ObjC runtime, and Local LLMs / MediaPipe).
+9. **🧪 "I want to master Mobile QA, SDET & Automation Testing"**  
+   $\rightarrow$ Deep dive into the **[Mobile QA Strategy & Automation Hub](./engineering/testing/README.md)** covering the Mobile Test Pyramid, interruption matrices, Jetpack Compose Semantics, iOS XCUITest, and Maestro declarative workflows.
 
 ---
 

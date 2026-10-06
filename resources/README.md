@@ -15,12 +15,14 @@ graph TD
     Res --> Cross[3. Cross-Platform Repos]
     Res --> Tool[4. System Design & Tooling Repos]
     Res --> Comm[5. Newsletters, Blogs & Podcasts]
+    Res --> YT[6. YouTube & Video Learning]
 
     And --> A1[Production Architectures, UI Showcase, KMP & Dev Tools]
     iOS --> I1[SwiftUI Production Apps, TCA Showcases, Concurrency Tools]
     Cross --> C1[Full-Scale Flutter & React Native Production Codebases]
     Tool --> T1[Telemetry, Profiling, RASP Security & Binary Analyzers]
     Comm --> M1[Weekly Digests, Tech Blogs, & Podcast Episodes]
+    YT --> Y1[MAD Skills, Philipp Lackner, Paul Hudson, ByteByteGo & Droidcon]
 ```
 
 ---
@@ -34,6 +36,7 @@ graph TD
 | **[🌉 03. Awesome Cross-Platform Repositories](./03-awesome-cross-platform-repos.md)** | Flutter & React Native | Wonderous, AppFlowy, Bluesky Social, Expensify/App, Mattermost Mobile. |
 | **[📐 04. System Design & Security Repositories](./04-mobile-system-design-and-tooling-repos.md)** | Infrastructure & Tooling | MobSF, OWASP MASTG, Frida-Mobile-Scripts, Emerge Tools, Matrix (Tencent). |
 | **[🎙️ 05. Essential Newsletters, Blogs & Podcasts](./05-essential-newsletters-blogs-podcasts.md)** | Continuous Learning | Android Weekly, iOS Dev Weekly, SwiftLee, Uber/DoorDash/Meta Engineering Blogs, Fragmented Podcast. |
+| **[📺 06. YouTube Channels & Video Learning](./06-essential-youtube-learning-resources.md)** | Video Learning & Talks | Android Developers, Apple WWDC, Philipp Lackner, Paul Hudson, Point-Free, ByteByteGo, Droidcon. |
 
 ---
 

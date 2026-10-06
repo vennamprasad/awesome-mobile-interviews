@@ -235,6 +235,7 @@ Hand-picked directories of world-class open-source repositories, developer tools
 - **[Awesome Cross-Platform Repositories](./resources/03-awesome-cross-platform-repos.md)**: Wonderous, AppFlowy, Bluesky Social, Expensify.
 - **[System Design & Tooling Repositories](./resources/04-mobile-system-design-and-tooling-repos.md)**: MobSF, OWASP MASTG, Frida-Mobile-Scripts, Emerge Tools.
 - **[Essential Newsletters, Blogs & Podcasts](./resources/05-essential-newsletters-blogs-podcasts.md)**: Android Weekly, iOS Dev Weekly, SwiftLee, Uber/DoorDash/Meta Engineering Blogs.
+- **[YouTube Channels & Video Learning](./resources/06-essential-youtube-learning-resources.md)**: Android Developers (MAD), Apple WWDC, Philipp Lackner, Paul Hudson, Point-Free, ByteByteGo, Droidcon.
 
 ---
 

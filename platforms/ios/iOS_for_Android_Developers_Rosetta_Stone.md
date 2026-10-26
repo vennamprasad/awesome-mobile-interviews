@@ -230,12 +230,26 @@ struct CounterScreen: View {
 Both ecosystems have moved away from callbacks and threads to **Structured Concurrency**.
 
 ```mermaid
-graph TD
-    A[CoroutineScope in Android] <--> B[Task / TaskGroup in Swift]
-    C[Dispatchers.Main] <--> D[@MainActor / DispatchQueue.main]
-    E[Dispatchers.IO] <--> F[Cooperative Global Thread Pool]
-    G[StateFlow / Flow] <--> H[AsyncStream / Combine Publisher]
-    I[Mutex / Atomic] <--> J[Swift actor]
+graph LR
+    subgraph Kotlin
+        A["CoroutineScope"]
+        C["Dispatchers.Main"]
+        E["Dispatchers.IO"]
+        G["StateFlow / Flow"]
+        I["Mutex / Atomic"]
+    end
+    subgraph Swift
+        B["Task / TaskGroup"]
+        D["@MainActor / DispatchQueue.main"]
+        F["Cooperative Global Thread Pool"]
+        H["AsyncStream / Combine Publisher"]
+        J["Swift actor"]
+    end
+    A --- B
+    C --- D
+    E --- F
+    G --- H
+    I --- J
 ```
 
 ### Concurrency Rosetta Stone
